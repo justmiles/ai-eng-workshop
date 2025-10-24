@@ -24,4 +24,4 @@ COPY 01-intro-to-ai-engineering /tmp/workshops/01-intro-to-ai-engineering
 
 EXPOSE 8888
 
-CMD ["jupyter", "lab", "--port=8888", "--no-browser"," --core-mode", "--ServerApp.token=''","--ServerApp.password=''"]
+CMD ["jupyter", "lab", "--port=8888", "--no-browser","--core-mode", "--ServerApp.token=''","--ServerApp.password=''"]

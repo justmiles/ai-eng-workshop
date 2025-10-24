@@ -3,7 +3,7 @@
 To run this workshop locally, launch it from your local workstation:
 
 ```bash
-docker run --rm -name ai-eng-workshop \
+docker run --rm --name ai-eng-workshop \
   -v $PWD/work:/home/jovyan/work \
   -p 8888:8888 \
   justmiles/notebook:ai-eng-workshop
@@ -24,4 +24,4 @@ To progress through this workshop we need to launch ollama and ensure the models
 
 You can view the currently downloaded models with the command `ollama list`. View available models here: https://ollama.com/search
 
-Juper notebooks can be worked through in alphanumeric order.
+Jupiter notebooks can be worked through in alphanumeric order.

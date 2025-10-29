@@ -2,7 +2,7 @@ clean:
 	find . -name '*.ipynb' | xargs jupyter nbconvert --clear-output --inplace
 
 build: clean
-	docker build . -t justmiles/notebook:ai-eng-workshop
+	docker build . -t justmiles/ai-eng-workshop:latest
 
 publish:
-	docker push justmiles/notebook:ai-eng-workshop
+	docker push justmiles/ai-eng-workshop:latest

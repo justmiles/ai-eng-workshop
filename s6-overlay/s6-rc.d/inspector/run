@@ -1,0 +1,10 @@
+#!/command/with-contenv bash
+set -e
+
+USER=jovyan \
+  HOME=/home/jovyan \
+  DANGEROUSLY_OMIT_AUTH=true \
+  HOST=0.0.0.0 \
+  s6-setuidgid jovyan npx @modelcontextprotocol/inspector \
+    --transport "http" \
+    2>&1 | s6-log -bp n3 pinspector 1 /var/log/inspector

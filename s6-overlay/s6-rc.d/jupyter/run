@@ -1,0 +1,10 @@
+#!/command/with-contenv bash
+set -e
+
+USER=jovyan HOME=/home/jovyan s6-setuidgid jovyan \
+  jupyter lab \
+    --port=8888 \
+    --no-browser \
+    --core-mode \
+    --ServerApp.token='' \
+    --ServerApp.password='' 2>&1 | s6-log -bp n3 pjupyter 1 /var/log/jupyter

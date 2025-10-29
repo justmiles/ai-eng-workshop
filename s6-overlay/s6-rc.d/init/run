@@ -1,0 +1,4 @@
+#!/command/with-contenv bash
+set -ex
+
+s6-setuidgid jovyan cp --update -r /tmp/workshops /home/jovyan/work/ 2>&1| s6-log -bp n3 pinit 1 /var/log/init

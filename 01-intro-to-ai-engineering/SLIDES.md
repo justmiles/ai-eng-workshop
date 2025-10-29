@@ -15,7 +15,7 @@ AI engineering is the discipline of building applications on top of foundation m
 ## What's out of Scope (for now)
 
 - Building and deploying MCP (Model Context Protocol)
-- Core frameworks like smolagents, LangChain/LangGraph, and AutoGen
+- Agentic frameworks like smolagents, LangChain/LangGraph, and AutoGen
 - RAG (Retrieval Augmented Generation), embeddings, and vector databases
 - LLMOps: Evaluating, optimizing, and deploying AI systems
 - Finetuning existing models

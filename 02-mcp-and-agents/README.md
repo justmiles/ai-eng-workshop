@@ -32,14 +32,6 @@ https://modelcontextprotocol.io/specification/2025-03-26/basic/transports
 - Resources
 - Prompts
 
-## Agents
-
-- Tools
-- Code Interpreters
-- Skills
-
-https://www.anthropic.com/engineering/building-effective-agents
-
 ## Workshop
 
 - Start by creating a very simple MCP server
